@@ -34,3 +34,12 @@ const sumDigits = (num) => {
 console.log(sumDigits(48));
 console.log(sumDigits(18));
 
+// Pythagoras
+
+const calculateSide = (sideA, sideB) => {
+	sideC = ((sideA ** 2) + (sideB ** 2))
+	return Math.sqrt(sideC)
+}
+
+console.log(calculateSide(8,6));
+console.log(calculateSide(4,3));
