@@ -58,7 +58,7 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // Prime Numbers
 
-/*const checkPrime = (num1) => {
+const checkPrime = (num1) => {
 	for (let i=2; i <= Math.sqrt(num1); i++) {
 		if (num1 % i === 0) {
 			return false
@@ -84,8 +84,24 @@ const printPrimes = (given) => {
 
 printPrimes(91);
 
-Ok I think this one works now but I tested it 3 seperate
-times and my computer started working very hard and didn't finish
-testing so I am going to have to be unsure so testing doesn't make my
-computer explode */
+// Insert Dash
+
+//if array[i] % 2 != 0 && array[i+1] % 2 != 0
+
+const insertDash = (num) => {
+	let array = num.toString().split("")
+	for (let i = 0; i < array.length; i++) {
+		array[i] = Number(array[i])
+	}
+	for (let i=0; i < array.length - 1; i++) {
+		if (array[i] % 2 != 0 && array[i+1] % 2 != 0)
+			array[i] = array[i] + "-"
+	}
+	return array.join("")
+}
+
+console.log(insertDash(454793));
+
+console.log(insertDash(454796));
+
 
