@@ -9,3 +9,15 @@ the function is called. They are sometimes used interchangably.
 
 3. Return ends the function and stores the value while console.log just logs the
 value to the console. */
+
+// Palindrome
+
+const checkPalindrome = (str) => {
+	if (str.toLowerCase() === str.toLowerCase().split("").reverse().join("")) {
+		return true;
+	}
+	return false;
+}
+console.log(checkPalindrome("Tacocat"));
+console.log(checkPalindrome("Banana"));
+
