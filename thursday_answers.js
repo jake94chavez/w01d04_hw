@@ -11,7 +11,7 @@ the function is called. They are sometimes used interchangably.
 value to the console. */
 
 // Palindrome
-
+/*
 const checkPalindrome = (str) => {
 	if (str.toLowerCase() === str.toLowerCase().split("").reverse().join("")) {
 		return true;
@@ -55,4 +55,37 @@ const sumArray = (array) => {
 }
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// Prime Numbers
+*/
+/*const checkPrime = (num1) => {
+	for (let i=2; i <= Math.sqrt(num1); i++) {
+		if (num1 % i === 0) {
+			return false
+		}
+	}
+	return true
+}
+
+console.log(checkPrime(17));
+console.log(checkPrime(8));
+console.log(checkPrime(9));
+console.log(checkPrime(997));
+
+const printPrimes = (given) => {
+	let primes = [];
+	for (let i=1; i <= given; i++) {
+		if (checkPrime(i)) {
+			result.push(i);
+		}
+	}
+	console.log(primes);
+}
+
+printPrimes(91);
+
+Ok I think this one works now but I tested it 3 seperate
+times and my computer started working very hard and didn't finish
+testing so I am going to have to be unsure so testing doesn't make my
+computer explode */
 
