@@ -27,9 +27,10 @@ const sumDigits = (num) => {
 	let sum = 0;
 	let add = num.toString().split("");
 	for (let i = 0; i < add.length; i++) {
-		sum += num(add[i]);
+		sum += Number(add[i]);
 	}
 	return sum;
 }
 console.log(sumDigits(48));
 console.log(sumDigits(18));
+
